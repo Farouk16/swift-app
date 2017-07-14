@@ -3,8 +3,8 @@
 //  secondtry
 //
 //  Created by Farouk on 7/14/17.
-//  Copyright © 2017 Farouk. All rights reserved.
-//
+//  Copyright © 2017 Farouk. All rights reserved..
+//😉
 
 import UIKit
 
@@ -18,9 +18,9 @@ class ViewController: UIViewController {
         
         tapCount = tapCount + 1
         
-        if tapCount >= 10 {
+        if tapCount >= 5 {
             
-        theLabel.text = "You tapped the button 10 times!"
+        theLabel.text = "You tapped the button 5 times!"
             
         }
     
