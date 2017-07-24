@@ -12,32 +12,31 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var theLabel: UILabel!
     
-    var tapCount = 0
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
+    @IBOutlet weak var text3: UITextField!
     
     @IBAction func buttonPushed(_ sender: Any) {
         
-        tapCount = tapCount + 1
+        theLabel.text = "Answer is: \(Double(text1.text!)! + Double(text2.text!)!)"
         
-        if tapCount >= 5 {
-            
-        theLabel.text = "You tapped the button 5 times!"
             
         }
     
-        
-           }
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view, typically from a nib.
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the  view, typically from a nib.
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+}
 
 
 }
+
+
 
